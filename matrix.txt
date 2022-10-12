@@ -4,6 +4,11 @@ the transposed matrices.
 ---------------------------------------------------------------------------------------------------------------
 
 
+--------------------------
+Time Complexity:  O(n^3)
+Space Complexity: O(n^2)
+--------------------------
+
 import java.util.*;
 import java.lang.*;
 import java.io.*;
