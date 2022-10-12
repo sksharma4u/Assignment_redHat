@@ -1,0 +1,124 @@
+-----------------------
+Time Complexity  : O(n)
+Space Complexity : O(n)
+-----------------------
+
+import java.util.*;
+class Main{
+
+    public static boolean isAnagram(String s, String t) {
+            
+            if(s.length() !=t.length()){
+                return false;
+            }
+
+            String s1 = "";
+            String s2 = "";
+            String val1 = "";
+            String val2 = "";
+            
+            
+            Map<Character , Integer> mp1 = new TreeMap<>();
+            Map<Character  , Integer> mp2 = new TreeMap<>();
+            
+            for(int i=0; i<s.length() ; i++){
+    
+                if(mp1.containsKey(s.charAt(i))){
+    
+                    int old = mp1.get(s.charAt(i));
+                    int x = old +1;
+                    mp1.put(s.charAt(i) , x);
+    
+                }else{
+                    mp1.put(s.charAt(i) , 1);
+                }
+    
+            }
+            
+            for(char i:mp1.keySet()){
+               s1+=i;
+               val1+=mp1.get(i);  
+            }
+            
+            
+            for(int i=0; i<t.length() ; i++){
+    
+                if(mp2.containsKey(t.charAt(i))){
+    
+                    int old = mp2.get(t.charAt(i));
+                    int x = old +1;
+                    mp2.put(t.charAt(i) , x);
+    
+                }else{
+    
+                    mp2.put(t.charAt(i) , 1);
+    
+                }
+    
+            }
+            
+            for(char i : mp2.keySet()){
+    
+               s2+=i;
+               val2+=mp2.get(i);
+    
+            }
+            
+            
+            if(s1.equals(s2) && val1.equals(val2)){
+                return true;
+            }
+            
+            return false;
+        
+    }
+    public static void main(String[] args){
+        
+    	boolean res = isAnagram("cat" , "act");
+	    System.out.println(res);
+	    
+   }
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+---------------------------
+Time Complexity  : O(nlogn)
+Space Complexity : O(n)
+---------------------------
+
+
+import java.util.*;
+class Main{
+
+    public static boolean isAnagram(String s, String t) {
+            
+        boolean val = true;
+        
+        if (s.length() != t.length()) {  
+            return false;
+        }
+ 
+        char[] A1 = s.toCharArray();  
+        char[] A2 = t.toCharArray();  
+            
+        Arrays.sort(A1);  
+        Arrays.sort(A2);  
+            
+        val = Arrays.equals(A1, A2);  
+       
+        if (val) {  
+            return true;
+        }
+        
+        return false;
+        
+    }
+    public static void main(String[] args){
+        
+    	boolean res = isAnagram("cat" , "act");
+	    System.out.println(res);
+	    
+   }
+}
