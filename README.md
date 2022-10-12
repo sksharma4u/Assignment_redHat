@@ -11,6 +11,18 @@ Few remarks on Anagram Code:
 5: A1 contains the string s character, and A2 contains the string t character.\
 6: If both Arrays have an identical character at the same index number at the end, it is an anagram and returns true, otherwise, it returns false.
 
+
+-----------------------------------
+Few remarks on Insert sign(+ , -):
+-----------------------------------
+
+1:The objective is to take the string 123456789 and add the signs + and - between the digits to make the new string's evaluated value equal to 100.\
+2:The way the issue is written makes it possible to get the answer with fewer than eight signs, for instance: 1+23-4+56+7+8+9 = 100.\
+3:My idea is to produce a run of numbers from 0 to 38 and display them as base 3 numbers.\
+4:Here, we want three operators: +, -, and no operation (or concatenation). There are 8 of these positions (one less than the length of the string.\
+
+
+
 ----------------------------
 Few remarks on Matrix codes:
 ----------------------------
@@ -20,11 +32,6 @@ Few remarks on Matrix codes:
 3: Matrix_M1 and Matrix_M2 are the arguments which passes as a parameter in multiplication method.\
 4: Multiplication method multiplies both the transpose matrix and stores the result in res variable.\
 5: The display method will get the results at the end and print the matrix.
-
-
------------------------------------
-Few remarks on Insert sign(+ , -):
------------------------------------
 
 
 
