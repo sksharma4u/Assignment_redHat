@@ -15,11 +15,11 @@ Few remarks on Anagram Code:
 Few remarks on Matrix codes:
 ----------------------------
 
-1: I took the A and B 4 X 4 matrices.
-2: The transpose of both Matrix_M1 and Matrix_M2 is contained in these two matrices.
-3: Matrix_M1 and Matrix_M2 are the arguments which passes as a parameter in multiplication method.
-4: Multiplication method multiplies both the transpose matrix and stores the result in res variable.
-5: The display method will get the results at the end and print the matrix.
+1: I took the A and B 4 X 4 matrices.\
+2: The transpose of both Matrix_M1 and Matrix_M2 is contained in these two matrices.\
+3: Matrix_M1 and Matrix_M2 are the arguments which passes as a parameter in multiplication method.\
+4: Multiplication method multiplies both the transpose matrix and stores the result in res variable.\
+5: The display method will get the results at the end and print the matrix.\
 
 
 -----------------------------------
