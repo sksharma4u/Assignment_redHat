@@ -1,17 +1,18 @@
-------------------------------------------------------------------------------------------------------------
-Program to check if two given String is Anagram of each other return true if Input
-string is anagram otherwise return false.
-----------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
+// Program to check if two given String is Anagram of each other return true if Input
+// string is anagram otherwise return false.
+// ----------------------------------------------------------------------------------------------------------
 
 
----------------------------
-Time Complexity  : O(nlogn)
-Space Complexity : O(n)
----------------------------
+//---------------------------
+//Time Complexity  : O(nlogn)
+//Space Complexity : O(n)
+//---------------------------
 
 
 import java.util.*;
-class Main{
+
+class Anagram{
 
     public static boolean isAnagram(String s, String t) {
             

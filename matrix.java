@@ -1,20 +1,20 @@
-----------------------------------------------------------------------------------------------------------------
-Program to transpose two matrices (4X4) and print the multiplication of
-the transposed matrices.
----------------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------
+// Program to transpose two matrices (4X4) and print the multiplication of
+// the transposed matrices.
+// ---------------------------------------------------------------------------------------------------------------
 
 
---------------------------
-Time Complexity:  O(n^3)
-Space Complexity: O(n^2)
---------------------------
+// --------------------------
+// Time Complexity:  O(n^3)
+// Space Complexity: O(n^2)
+// --------------------------
 
 import java.util.*;
 import java.lang.*;
 import java.io.*;
 
 
-class Main
+class matrix
 {
 
     static int[][] Transpose(int M[][],int n) {
